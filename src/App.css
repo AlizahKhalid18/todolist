@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outer {
+  background-color: #353333;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.inner {
+  height: 86vh;
+  width: 55%;
+  background-color: rgba(204, 197, 197, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.heading {
+  margin-top: 5%;
+  text-align: center;
+  color: black;
+}
+.heading h2 {
+  font-weight: 500;
+  font-family: "Work Sans";
+}
+.form-input input {
+  border-radius: 6px;
+  font-size: 20px;
+  border: 1px solid #d6d6d6;
+}
+.form-input2 {
+  display: flex;
+  justify-content: center;
+}
+.form-input2 input {
+  border-radius: 6px;
+  font-size: 20px;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input input {
+  border-radius: 6px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  height: 38px;
 }
+.table {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 50vh;
+  width: 100%;
+}
+
+.dark-mode {
+  background-repeat: no repeat;
+  background-size: cover;
+  background-image: url("https://i.pinimg.com/originals/59/2f/ae/592fae18268bc4eecc25879241ff90b5.gif");
+  color: #ffffff;
+}
+
+.light-mode {
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://25.media.tumblr.com/tumblr_mcztg60Oip1rdropmo1_400.gif");
+  color: #000000;
+}
+
+td,
+.form-input input,
+.form-input2 input {
+  background-color: rgba(204, 197, 197, 0.5);
+  border-radius: 6px;
+  font-size: 18px;
+  border: 1px solid #d6d6d6;
+  color: #020202;
+  padding: 8px;
+}
+
+
+.dark-mode td,
+.dark-mode .form-input input,
+.dark-mode .form-input2 input {
+  background-color: rgba(134, 131, 131, 0.8);
+  color: #1f1414;
+  border: 1px solid #6e6e6e;
+}
+.dark-mode .form-input input,
+.dark-mode .form-input2 input {
+  background-color: rgba(209, 203, 203, 0.5);
+
+  border: 1px solid #6e6e6e;
+}
+
+
+.light-mode td,
+.light-mode .form-input input,
+.light-mode .form-input2 input {
+  border: 1px solid rgb(80, 77, 77);
+  background-color: rgba(114, 91, 91, 0.5);
+}
+.light-mode .form-input input,
+.light-mode .form-input2 input {
+  border: 1px solid rgb(80, 77, 77);
+  background-color: rgba(192, 185, 185, 0.5);
+}
+.form-input ::placeholder,
+.form-input2 ::placeholder {
+  font-size: 15px;
+  padding-left: 5px;
+}
+th {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+td {
+  font-size: 15px;
+}
+
+.dark-mode th {
+  background-color: rgba(134, 131, 131, 0.8);
+  color: #1f1414;
+  border: 1px solid #6e6e6e;
+}
+
+
+.light-mode th {
+  background-color: rgba(114, 91, 91, 0.5);
+  color: #000000;
+  border: 1px solid #6e6e6e;
+}
+
+
+
+
+
